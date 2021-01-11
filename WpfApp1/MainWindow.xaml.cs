@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*###############################################################################################
+ * Luke Sweeney, S00197749, 11/1/2021
+ * Exam program.
+ * https://github.com/lsweeney00/ProgrammingExamJan2021
+ ################################################################################################*/
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
