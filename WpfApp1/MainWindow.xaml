@@ -7,6 +7,28 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <ListBox x:Name="lbxAccounts" HorizontalAlignment="Left" Height="272" Margin="26,110,0,0" VerticalAlignment="Top" Width="246" RenderTransformOrigin="-0.12,0.42" SelectionChanged="ListBox_SelectionChanged"/>
+        <CheckBox x:Name="cboxCurrentAccount" Content="Current Accounts" HorizontalAlignment="Left" Margin="26,44,0,0" VerticalAlignment="Top" Checked="cboxCurrentAccount_Checked"/>
+        <CheckBox x:Name="cboxSavingsAccount" Content="Savings Accounts" HorizontalAlignment="Left" Margin="160,44,0,0" VerticalAlignment="Top" Checked="cboxCurrentAccount_Checked"/>
+        <TextBox x:Name="tbxTransactionAmount" HorizontalAlignment="Left" Height="23" Margin="457,362,0,0" TextWrapping="Wrap" Text="Enter Amount" VerticalAlignment="Top" Width="120" GotFocus="tblkTransactionAmount_GotFocus"/>
+        <TextBlock x:Name="tblkTAmountLabel" HorizontalAlignment="Left" Margin="335,362,0,0" TextWrapping="Wrap" Text="Transaction Amount :" VerticalAlignment="Top" RenderTransformOrigin="0.51,-0.188"/>
+        <TextBlock x:Name="tblkInterestDateLabel" HorizontalAlignment="Left" Margin="335,304,0,0" TextWrapping="Wrap" Text="Interest Date" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkInterestDate" HorizontalAlignment="Left" Margin="457,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkInterestLabel" HorizontalAlignment="Left" Margin="335,264,0,0" TextWrapping="Wrap" Text="Interest" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkInterest" HorizontalAlignment="Left" Margin="457,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkAccTypeLabel" HorizontalAlignment="Left" Margin="335,229,0,0" TextWrapping="Wrap" Text="Account Type" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkBalanceLabel" HorizontalAlignment="Left" Margin="335,191,0,0" TextWrapping="Wrap" Text="Balance" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkAccountType" HorizontalAlignment="Left" Margin="457,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkBalance" HorizontalAlignment="Left" Margin="457,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkLNameLabel" HorizontalAlignment="Left" Margin="335,149,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkFNameLabel" HorizontalAlignment="Left" Margin="335,110,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkAccountDetails" HorizontalAlignment="Left" Margin="335,67,0,0" TextWrapping="Wrap" Text="AccountDetails" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkLastName" HorizontalAlignment="Left" Margin="457,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkFirstName" HorizontalAlignment="Left" Margin="457,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkAccountsList" HorizontalAlignment="Left" Margin="26,80,0,0" TextWrapping="Wrap" Text="Accounts List" VerticalAlignment="Top"/>
+        <Button x:Name="btnDeposit" Content="Deposit" HorizontalAlignment="Left" Margin="669,108,0,0" VerticalAlignment="Top" Width="75" Click="btnDeposit_Click"/>
+        <Button x:Name="btnWithdraw" Content="Withdraw" HorizontalAlignment="Left" Margin="669,159,0,0" VerticalAlignment="Top" Width="75" Click="btnWithdraw_Click"/>
+        <Button x:Name="btnInterest" Content="Interest" HorizontalAlignment="Left" Margin="669,214,0,0" VerticalAlignment="Top" Width="75" Click="btnInterest_Click"/>
+
     </Grid>
 </Window>
